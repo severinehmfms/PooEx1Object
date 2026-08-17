@@ -14,9 +14,14 @@ public class City {
 		this.nbCitys++;
 	}
 	
+	public City(String nameCity, String nameCountry) {
+		this.nameCity = nameCity;
+		this.nameCountry = nameCountry;
+		this.nbCitys++;
+	}
+	
 	public City(String nameCity, int nbInHabitants) {
 		this.nameCity = nameCity;
-		this.nameCountry = "";
 		this.nbInHabitants = nbInHabitants;
 		this.nbCitys++;
 	}
@@ -27,8 +32,11 @@ public class City {
 	}
 	
 	public void beautifulDisplay() {
-		String strNameCountry = this.nameCountry != "" ? nameCountry : "unknown";
-		System.out.println("[Ville : " + this.nameCity + "] [Pays : " + strNameCountry + "] [Nombre d'habitants : " + this.nbInHabitants + "]");
+		System.out.println("[Ville : " + this.nameCity + "] [Pays : " + (this.nameCountry != null ? this.nameCountry : "unknown") + "] [Nombre d'habitants : " + this.nbInHabitants + "]");
+	}
+	
+	public String displayBirthPlace() {
+		return "[name=" + this.nameCity + ", state=" + (this.nameCountry != null ? this.nameCountry : "unknown") + ", nbInhabitants=" + this.nbInHabitants + "]";
 	}
 
 	

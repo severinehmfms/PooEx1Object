@@ -50,9 +50,6 @@ public class TestCity {
 		City nice = new City("Nice", "France", 340000);
 		System.out.println("Nombre de villes créées : " + City.nbCitys);
 		
-		//Exercice 1.8
-		
-		
 		
 	}
 }
