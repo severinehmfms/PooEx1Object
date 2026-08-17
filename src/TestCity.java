@@ -1,6 +1,10 @@
 
 public class TestCity {
 
+	/**
+	 * Classe TestCity, pour tester la classe City
+	 * @param args
+	 */
 	
 	public static void main(String[] args){
 		
@@ -49,7 +53,5 @@ public class TestCity {
 		City paris = new City("Paris", "France", 2000000);
 		City nice = new City("Nice", "France", 340000);
 		System.out.println("Nombre de villes créées : " + City.nbCitys);
-		
-		
 	}
 }
